@@ -1,14 +1,14 @@
 /*
  *
- *   Title of project : 
- *   Date of creation : 
+ *   Title of project :
+ *   Date of creation :
  *   Author(s) : PierreLgol
  *   github : https://github.com/pierrelgol
- * 
+ *
  *   More on the project :
- *   
- *   #TODO(s) :  
- * 
+ *
+ *   #TODO(s) :
+ *
  *
  */
 
@@ -19,9 +19,18 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
-int main()
-{
+// Function to count the characters in a string – Pointer version
+int stringLength(const char *string) {
+  const char *cptr = string;
+  while (*cptr)
+    ++cptr;
+  return cptr - string;
+}
 
-
-return EXIT_SUCCESS;
+int main(void) {
+  int stringLength(const char *string);
+  printf("%i ", stringLength("stringLength test"));
+  printf("%i ", stringLength(""));
+  printf("%i\n", stringLength("complete"));
+  return 0;
 }

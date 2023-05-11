@@ -1,14 +1,14 @@
 /*
  *
- *   Title of project : 
- *   Date of creation : 
+ *   Title of project :
+ *   Date of creation :
  *   Author(s) : PierreLgol
  *   github : https://github.com/pierrelgol
- * 
+ *
  *   More on the project :
- *   
- *   #TODO(s) :  
- * 
+ *
+ *   #TODO(s) :
+ *
  *
  */
 
@@ -19,9 +19,28 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
-int main()
-{
+#define YES 1
+#define NO 0
 
+// Function to determine if an integer is even
+int isEven(int number) {
+  int answer;
+  if (number % 2 == 0)
+    answer = YES;
+  else
+    answer = NO;
+  return answer;
+}
 
-return EXIT_SUCCESS;
+int main(void) {
+  int isEven(int number);
+  if (isEven(17) == YES)
+    printf("yes ");
+  else
+    printf("no ");
+  if (isEven(20) == YES)
+    printf("yes\n");
+  else
+    printf("no\n");
+  return 0;
 }

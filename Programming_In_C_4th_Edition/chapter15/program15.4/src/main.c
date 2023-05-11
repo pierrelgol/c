@@ -19,18 +19,10 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
-// Function to sum the elements of an integer array Ver. 2
-int arraySum(int *array, const int n) {
-  int sum = 0;
-  int *const arrayEnd = array + n;
-  for (; array < arrayEnd; ++array)
-    sum += *array;
-  return sum;
-}
-
+// Program to echo characters until an end of file
 int main(void) {
-  int arraySum(int *array, const int n);
-  int values[10] = {3, 7, -9, 3, 6, -1, 7, 9, 1, -5};
-  printf("The sum is %i\n", arraySum(values, 10));
+  int c;
+  while ((c = getchar()) != EOF)
+    putchar(c);
   return 0;
 }
