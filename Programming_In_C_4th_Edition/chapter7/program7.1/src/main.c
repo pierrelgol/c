@@ -1,14 +1,14 @@
 /*
  *
- *   Title of project : 
- *   Date of creation : 
+ *   Title of project :
+ *   Date of creation :
  *   Author(s) : PierreLgol
  *   github : https://github.com/pierrelgol
- * 
+ *
  *   More on the project :
- *   
- *   #TODO(s) :  
- * 
+ *
+ *   #TODO(s) :
+ *
  *
  */
 
@@ -19,9 +19,13 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
-int main()
+void printMessage(void)
+{ 
+  printf("Programming is fun.\n");
+}
+
+int main(void)
 {
-
-
-return EXIT_SUCCESS;
+  printMessage();
+  return 0;
 }

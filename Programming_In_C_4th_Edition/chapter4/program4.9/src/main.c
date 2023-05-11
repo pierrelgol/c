@@ -1,14 +1,14 @@
 /*
  *
- *   Title of project : 
- *   Date of creation : 
+ *   Title of project :
+ *   Date of creation :
  *   Author(s) : PierreLgol
  *   github : https://github.com/pierrelgol
- * 
+ *
  *   More on the project :
- *   
- *   #TODO(s) :  
- * 
+ *
+ *   #TODO(s) :
+ *
  *
  */
 
@@ -19,9 +19,21 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
+// Program to reverse the digits of a number
 int main()
 {
-
-
-return EXIT_SUCCESS;
+  int number, right_digit;
+  
+  printf("Enter your number.\n");
+  scanf("%i", &number);
+  
+  do {
+    right_digit = number % 10;
+    printf("%i", right_digit);
+    number = number / 10;
+  } while (number != 0);
+  
+  printf("\n");
+  
+  return 0;
 }

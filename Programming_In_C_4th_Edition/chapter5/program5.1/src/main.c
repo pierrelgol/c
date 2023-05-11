@@ -1,14 +1,14 @@
 /*
  *
- *   Title of project : 
- *   Date of creation : 
+ *   Title of project :
+ *   Date of creation :
  *   Author(s) : PierreLgol
  *   github : https://github.com/pierrelgol
- * 
+ *
  *   More on the project :
- *   
- *   #TODO(s) :  
- * 
+ *
+ *   #TODO(s) :
+ *
  *
  */
 
@@ -19,9 +19,17 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
-int main()
+// Program to calculate the absolute value of an integer
+int main(void)
 {
-
-
-return EXIT_SUCCESS;
+  int number;
+  printf("Type in your number: ");
+  scanf("%i", &number);
+  
+  if (number < 0)
+    number = -number;
+  
+  printf("The absolute value is %i\n", number);
+  
+  return 0;
 }

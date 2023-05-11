@@ -1,14 +1,14 @@
 /*
  *
- *   Title of project : 
- *   Date of creation : 
+ *   Title of project :
+ *   Date of creation :
  *   Author(s) : PierreLgol
  *   github : https://github.com/pierrelgol
- * 
+ *
  *   More on the project :
- *   
- *   #TODO(s) :  
- * 
+ *
+ *   #TODO(s) :
+ *
  *
  */
 
@@ -19,9 +19,27 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
-int main()
+// Generate Fibonacci numbers using variable length arrays
+int main(void)
 {
-
-
-return EXIT_SUCCESS;
+  int i, numFibs;
+  printf("How many Fibonacci numbers do you want (between 1 and 75)? ");
+  scanf("%i", &numFibs);
+  
+  if (numFibs < 1 || numFibs > 75) {
+    printf("Bad number, sorry!\n");
+    return 1;
+  }
+  
+  unsigned long long int Fibonacci[numFibs];
+  Fibonacci[0] = 0; // by definition
+  Fibonacci[1] = 1; // ditto
+  
+  for (i = 2; i < numFibs; ++i)
+    Fibonacci[i] = Fibonacci[i - 2] + Fibonacci[i - 1];
+  for (i = 0; i < numFibs; ++i)
+    printf("%llu ", Fibonacci[i]);
+  printf("\n");
+  
+  return 0;
 }

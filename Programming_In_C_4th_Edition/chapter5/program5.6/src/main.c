@@ -1,14 +1,14 @@
 /*
  *
- *   Title of project : 
- *   Date of creation : 
+ *   Title of project :
+ *   Date of creation :
  *   Author(s) : PierreLgol
  *   github : https://github.com/pierrelgol
- * 
+ *
  *   More on the project :
- *   
- *   #TODO(s) :  
- * 
+ *
+ *   #TODO(s) :
+ *
  *
  */
 
@@ -19,9 +19,22 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
-int main()
+// Program to implement the sign function
+int main(void)
 {
-
-
-return EXIT_SUCCESS;
+  int number, sign;
+  
+  printf("Please type in a number: ");
+  scanf("%i", &number);
+  
+  if (number < 0)
+    sign = -1;
+  else if (number == 0)
+    sign = 0;
+  else // Must be positive
+    sign = 1;
+  
+  printf("Sign = %i\n", sign);
+  
+  return 0;
 }

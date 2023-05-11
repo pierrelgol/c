@@ -1,14 +1,14 @@
 /*
  *
- *   Title of project : 
- *   Date of creation : 
+ *   Title of project :
+ *   Date of creation :
  *   Author(s) : PierreLgol
  *   github : https://github.com/pierrelgol
- * 
+ *
  *   More on the project :
- *   
- *   #TODO(s) :  
- * 
+ *
+ *   #TODO(s) :
+ *
  *
  */
 
@@ -19,9 +19,15 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
-int main()
+int main(void)
 {
-
-
-return EXIT_SUCCESS;
+  char word[] = {'H', 'e', 'l', 'l', 'o', '!'};
+  int i;
+  
+  for (i = 0; i < 6; ++i)
+    printf("%c", word[i]);
+  
+  printf("\n");
+  
+  return 0;
 }

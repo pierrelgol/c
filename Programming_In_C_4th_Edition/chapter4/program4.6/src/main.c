@@ -1,14 +1,14 @@
 /*
  *
- *   Title of project : 
- *   Date of creation : 
+ *   Title of project :
+ *   Date of creation :
  *   Author(s) : PierreLgol
  *   github : https://github.com/pierrelgol
- * 
+ *
  *   More on the project :
- *   
- *   #TODO(s) :  
- * 
+ *
+ *   #TODO(s) :
+ *
  *
  */
 
@@ -19,9 +19,15 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
-int main()
+// Program to introduce the while statement
+int main(void)
 {
-
-
-return EXIT_SUCCESS;
+  int count = 1;
+  
+  while (count <= 5) {
+    printf("%i\n", count);
+    ++count;
+  }
+  
+  return 0;
 }
