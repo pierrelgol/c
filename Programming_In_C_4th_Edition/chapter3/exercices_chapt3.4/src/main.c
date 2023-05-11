@@ -21,7 +21,11 @@
 
 int main()
 {
+ float fahrenheit, celcius;
+ fahrenheit = 27;
+ celcius = (fahrenheit - 32) / 1.8;
 
+ printf("Fahrenheit %.2f is equal to %.2f Celcius\n",fahrenheit,celcius);
 
 return EXIT_SUCCESS;
 }
