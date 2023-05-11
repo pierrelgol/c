@@ -1,5 +1,5 @@
 # 3. What output would you expect from the following program?
-'''C
+```C
 #include <stdio.h>
 
 int main (void)
@@ -11,5 +11,5 @@ int main (void)
    printf ("\n");
    return 0;
 }
-'''
-# output = Testing.......1...2..3");
+```
+# output = Testing.......1...2..3
