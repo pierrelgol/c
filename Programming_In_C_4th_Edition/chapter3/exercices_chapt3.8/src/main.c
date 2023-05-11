@@ -1,14 +1,14 @@
 /*
  *
- *   Title of project : 
- *   Date of creation : 
+ *   Title of project :
+ *   Date of creation :
  *   Author(s) : PierreLgol
  *   github : https://github.com/pierrelgol
- * 
+ *
  *   More on the project :
- *   
- *   #TODO(s) :  
- * 
+ *
+ *   #TODO(s) :
+ *
  *
  */
 
@@ -19,9 +19,11 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
-int main()
-{
+int main() {
+  int next_multiple, i = 256, j = 7;
+  next_multiple = i + j - i % j;
 
+  printf("The next multiple for %d days, is %d\n", i, next_multiple);
 
-return EXIT_SUCCESS;
+  return EXIT_SUCCESS;
 }
