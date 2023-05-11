@@ -1,5 +1,5 @@
 # 1. Type in and run the five programs presented in this chapter. Compare the output produced by each program with the output presented after each program in the text.
-  
+ ```C 
   1. 3.1 output = integerVar = 100
                   floatingVar = 331.790009
                   doubleVar = 8.440000e+11
@@ -29,3 +29,4 @@
                   -150 divided by 100 produces -1.000000
                   -150 divided by 100.0 produces -1.500000
                   (float) -150 divided by 100 produces -1.500000# new_project_template
+   ```
