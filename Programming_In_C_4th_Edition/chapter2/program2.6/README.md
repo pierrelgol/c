@@ -1,1 +1,1 @@
-# new_project_template
+# Program 2.6 Using Comments in a Program
