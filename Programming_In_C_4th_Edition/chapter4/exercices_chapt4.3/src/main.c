@@ -1,14 +1,14 @@
 /*
  *
- *   Title of project : 
- *   Date of creation : 
+ *   Title of project :
+ *   Date of creation :
  *   Author(s) : PierreLgol
  *   github : https://github.com/pierrelgol
- * 
+ *
  *   More on the project :
- *   
- *   #TODO(s) :  
- * 
+ *
+ *   #TODO(s) :
+ *
  *
  */
 
@@ -19,9 +19,15 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
-int main()
-{
+int main() {
 
-
-return EXIT_SUCCESS;
+ int n, i;
+  
+  printf("|   n   |   TN  |\n");
+  printf("|-------|-------|\n");
+  for (i = 1, n = 5; i <= 10; i++) {
+		printf("| %5d | %5d |\n", n * i, ( (n * i) * (i * n + 1) / 2));
+	}
+  
+  return EXIT_SUCCESS;
 }
