@@ -1,1 +1,2 @@
-# new_project_template
+# Program 2.4 Displaying Variables
+
