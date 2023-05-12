@@ -1,1 +1,1 @@
-# new_project_template
+# Program 4.1 Calculating the Eighth Triangular Number
