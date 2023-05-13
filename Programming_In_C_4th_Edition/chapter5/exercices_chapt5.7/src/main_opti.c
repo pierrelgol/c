@@ -29,21 +29,21 @@ to compute the the prime number between 2 and 1000 the number of cycle needed is
 499500 improved version (main_opti) do the same in 6283 cycles which is a 78.5 times faster
 */
 
+int main() {
 
-int main(void)
-{
-  
   int p, d;
   int cycle = 0;
   bool isPrime;
-  
-  for (p = 2; p <= 1000; ++p) {
-    cycle++;
+
+  printf("2 3 ");
+  for (p = 5; p <= 1000; p++) {
     isPrime = true;
-    for (d = 2; d < p; ++d){
+    cycle++;
+    for (d = 2 ; d * d <= p; d++) {
       cycle++;
       if (p % d == 0){
         isPrime = false;
+        break;
       }
     }
     if (isPrime != false)
@@ -51,6 +51,7 @@ int main(void)
   }
   printf("\ncycle = %d",cycle);
   printf("\n");
-  
-  return 0;
+
+  return EXIT_SUCCESS;
 }
+
