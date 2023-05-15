@@ -19,27 +19,28 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
+int gdc(int a, int b){
+
+	while( b != 0){
+		int remainder = a % b;
+		a = b;
+		b = remainder;
+	}
+	return a;
+}
+
+int lcm(int a, int b){
+	int lcm = (a * b) / gdc(a,b);
+	return lcm;
+}
+
 int main()
 {
-	int u, v ,lcm;
+	int u, v;
 
 	printf("Enter the value for u and v : \n");
 	scanf(" %d %d",&u ,&v);
-
-	lcm = u*v;
-	int min = (u < v ? u : v);
-
-	while(lcm != 0){
-
-		if ( lcm % u == 0 && lcm % v == 0){
-			break;
-		}
-		lcm -= min;
-	}
-
-	if(lcm != 0){
-		printf("The lcm for %d and %d is %d\n",u,v,lcm);
-	}	
+	printf("The lcm of %d and %d is %d\n",u,v,lcm(u,v));
 
 return EXIT_SUCCESS;
 }
