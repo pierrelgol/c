@@ -1,1 +1,1 @@
-# new_project_template
+# 13. Modify the sort() function from Program 7.12 to take a third argument indicating whether the array is to be sorted in ascending or descending order. Then modify the sort() algorithm to correctly sort the array into the indicated order.
