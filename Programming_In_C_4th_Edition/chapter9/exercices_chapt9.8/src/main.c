@@ -14,6 +14,8 @@
 
 //--------------------[     DEPENDENCIES DECLARATION     ]--------------------//
 
+#include <stddef.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -21,7 +23,9 @@
 
 int main()
 {
+  for (size_t i = 0; i < 10; i++) {
+    printf("Hello world\n");
+  }
 
-
-return EXIT_SUCCESS;
+ return EXIT_SUCCESS;
 }
