@@ -1,1 +1,1 @@
-# new_project_template
+# “11. Extend the strToInt() function from Program 9.11 so that if the first character of the string is a minus sign, the”
