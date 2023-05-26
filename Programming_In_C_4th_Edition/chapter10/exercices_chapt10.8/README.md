@@ -1,1 +1,1 @@
-# new_project_template
+# 8. Write a function called sort3() to sort three integers into ascending order. (This function is not to be implemented with arrays.)
