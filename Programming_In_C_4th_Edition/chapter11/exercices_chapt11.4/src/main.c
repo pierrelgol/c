@@ -19,6 +19,9 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
+unsigned int intSize();
+unsigned int rotate(unsigned int value, int n);
+
 int main(void) {
   unsigned int w1 = 0xabcdef00u, w2 = 0xffff1122u;
   unsigned int rotate(unsigned int value, int n);
@@ -31,7 +34,7 @@ int main(void) {
   return 0;
 }
 
-unsigned int insSize(){
+unsigned int intSize(){
   unsigned int val = ~0, bits = 0;
   while ( val != 0 ){
     val >>= 1;
@@ -41,15 +44,15 @@ unsigned int insSize(){
 }
 
 unsigned int rotate(unsigned int value, int n) {
-  unsigned int result, bits , intSize = intSize;
+  unsigned int result, bits , int_size = intSize();
   if (n == 0)
     result = value;
   else if (n > 0) { // left rotate
-    bits = value >> (intSize - n);
+    bits = value >> (int_size - n);
     result = value << n | bits;
   } else { // right rotate
     n = -n;
-    bits = value << (intSize - n);
+    bits = value << (int_size - n);
     result = value >> n | bits;
   }
   return result;
