@@ -19,9 +19,17 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
+typedef int (*FunctionPtr)(void);
+
+int foo(void){
+ return 7;
+}
+
 int main()
 {
+ FunctionPtr p = &foo;
 
+ printf("Funtion ptr is pointing to the function foo() which return the value %d\n",p());
 
 return EXIT_SUCCESS;
 }
