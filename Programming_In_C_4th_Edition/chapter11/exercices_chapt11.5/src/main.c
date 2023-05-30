@@ -20,7 +20,8 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
-int bit_test(unsigned int number, int bitNumber);
+unsigned int bit_test(unsigned int number, int bitNumber);
+unsigned int bit_set(unsigned int number, int bitNumber);
 
 int main() {
 
@@ -32,14 +33,19 @@ int main() {
   printf("Test................................................................................Passed\n");
   assert(bit_test(10,3) == 1);
   printf("Test................................................................................Passed\n");
-  assert(bit_test(10,4) == 0);
+  assert(bit_set(10,2) == 14);
   printf("Test................................................................................Passed\n");
 
   return EXIT_SUCCESS;
 }
 
-int bit_test(unsigned int number, int bitNumber) {
+unsigned int bit_test(unsigned int number, int bitNumber) {
   unsigned int mask = 1;
   mask = ( 1 << bitNumber);
   return ( number & mask ) != 0;
+}
+unsigned int bit_set(unsigned int number, int bitNumber) {
+  unsigned int mask = 1;
+  mask = mask << bitNumber;
+  return number | mask;
 }
