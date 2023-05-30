@@ -19,9 +19,12 @@
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
+#define MIN(x,y) ((x) < (y)) ? (x) : (y)
+
 int main()
 {
 
+ printf("MIN = %d\n",MIN(10,5));
 
 return EXIT_SUCCESS;
 }
