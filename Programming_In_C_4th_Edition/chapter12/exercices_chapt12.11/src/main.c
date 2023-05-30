@@ -16,12 +16,15 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
 int main()
 {
+ char ch1 = '0', ch2 = 'A', ch3 = 'a';
 
+ printf("%c : %i, %c : %i, %c : %i\n",ch1,isdigit('0'),ch2,isupper(ch2),ch3,isalpha(ch3));
 
 return EXIT_SUCCESS;
 }
