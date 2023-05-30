@@ -1,1 +1,1 @@
-# new_project_template
+# 4. Define a macro MAX3 that gives the maximum of three values. Write a program to test the definition.
