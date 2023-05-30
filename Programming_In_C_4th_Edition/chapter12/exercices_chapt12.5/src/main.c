@@ -1,14 +1,14 @@
 /*
  *
- *   Title of project : 
- *   Date of creation : 
+ *   Title of project :
+ *   Date of creation :
  *   Author(s) : PierreLgol
  *   github : https://github.com/pierrelgol
- * 
+ *
  *   More on the project :
- *   
- *   #TODO(s) :  
- * 
+ *
+ *   #TODO(s) :
+ *
  *
  */
 
@@ -16,12 +16,18 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 
 //--------------------[     MAIN METHOD     ]--------------------------------//
 
-int main()
-{
+#define SHIFT(v,n) (((n) > 0) ? ((v) << (n)) : ((v) >> (-n)))
 
 
-return EXIT_SUCCESS;
+int main() {
+  
+  int v = 10, n = 2;
+  assert(SHIFT(v,n) == 40);
+  printf("Test....................Passed\n");
+  
+  return EXIT_SUCCESS;
 }
