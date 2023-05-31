@@ -1,1 +1,0 @@
-# Program 4.3 Generating a Table of Triangular Number

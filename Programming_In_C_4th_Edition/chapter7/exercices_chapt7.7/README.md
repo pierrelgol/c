@@ -1,1 +1,0 @@
-# 7. Write a function that raises an integer to a positive integer power. Call the function x_to_the_n() taking two integer arguments x and n. Have the function return a long int, which represents the results of calculating xn.

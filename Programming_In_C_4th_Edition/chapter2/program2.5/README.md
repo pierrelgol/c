@@ -1,1 +1,0 @@
-# Program 2.5 Displaying Multiple Values

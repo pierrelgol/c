@@ -1,1 +1,0 @@
-# 5. Write a program that writes columns m through n of each line of a file to stdout. Have the program accept the values of m and n from the terminal window.
