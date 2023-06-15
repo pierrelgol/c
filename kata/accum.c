@@ -11,7 +11,7 @@ char *accum(const char *source) {
   
   size_t res_len = 0;
   for (size_t i = 0; i < src_len; i++){
-   res_len += i;
+    res_len += i;
   }
   res_len += src_len * 2;
 
